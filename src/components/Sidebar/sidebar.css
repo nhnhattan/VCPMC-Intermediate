@@ -1,0 +1,141 @@
+.sidebar-wrapper {
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+  width: 170px;
+  /* min-height: 1080px; */
+  height: 100%;
+  background-color: var(--background-bg-dark);
+  border-radius: 0px 24px 24px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-menu {
+  padding-top: 38px;
+  padding-bottom: 119px;
+}
+
+.sidebar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .navbar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
+  width: 100%;
+  margin-bottom: 27px;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.navbar-item .icon {
+  stroke: #c8c8db;
+  fill: #c8c8db;
+}
+
+.sidebar .navbar-item p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+  color: var(--text-stoke);
+}
+
+.active {
+  position: relative;
+  pointer-events: none;
+}
+
+.sidebar .active p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+  color: var(--Orange-4-default);
+}
+
+.sidebar .active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: var(--Orange-4-default);
+  border-radius: 6px;
+}
+
+.active .icon {
+  stroke: var(--Orange-4-default);
+  stroke-width: 1.4;
+  fill: var(--Orange-4-default);
+  fill-opacity: 0.8;
+}
+
+.navbar-item-list {
+  width: 100%;
+  position: relative;
+}
+
+.navbar-item-list::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+}
+
+.more-icon-navbar {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 500;
+  position: absolute;
+  top: 32%;
+  right: -7px;
+  transform: translate(-50%, -50%);
+}
+
+.navbar-list-child {
+  display: none;
+  position: absolute;
+  top: 0;
+  min-width: 216px;
+  border-radius: 0px 8px 8px 0px;
+  left: 100%;
+  z-index: 10;
+  overflow: hidden;
+  transition: ease-in-out 1s 0.3s;
+}
+
+.navbar-child-item {
+  padding: 12px 0 12px 24px;
+  background-color: var(--background-2);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navbar-child-item:hover {
+  background-color: var(--background-bg-lightest);
+}
+
+.navbar-item-list:hover .navbar-list-child {
+  display: block;
+}
+

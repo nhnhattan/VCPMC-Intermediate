@@ -1,0 +1,167 @@
+.table-custom-wrapper {
+  width: 1533px;
+  height: 724px;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  padding: 16px 24px 22px 24px;
+  margin-bottom: 60px;
+}
+
+.ant-table-wrapper {
+  width: 1485px;
+  background: transparent;
+  margin-bottom: 56px;
+}
+
+.ant-table {
+  background: transparent !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.ant-table-thead tr th.ant-table-cell {
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--Orange-3);
+}
+
+.ant-table-thead tr th {
+  border-bottom: none !important;
+}
+
+.ant-table-thead tr th:first-child {
+  padding-right: 29px !important;
+  text-align: right;
+}
+
+.ant-table-thead tr .ant-table-cell {
+  padding: 8px 0 20px 8px !important;
+}
+
+.ant-table-tbody .ant-table-row td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ant-table-tbody .ant-table-row td {
+  border-bottom: 1px solid rgba(115, 115, 135, 0.3);
+}
+
+.ant-table-tbody .ant-table-row:last-child td {
+  border-bottom: none !important;
+}
+
+.ant-table-tbody .ant-table-row td {
+  background: transparent !important;
+  padding: 12px 0 15px 8px !important;
+}
+
+.ant-table-tbody .ant-table-row td:first-child {
+  padding: 12px 29px 15px 0 !important;
+  text-align: right;
+}
+
+/* Pagination */
+.pagination-custom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 29px; */
+}
+
+.pagination-input-wrapper {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  color: rgba(245, 245, 255, 0.7);
+}
+
+.pagination-input-wrapper input {
+  width: 48.37px;
+  height: 32px;
+  background: var(--background-bg-lighter);
+  border: 1px solid var(--Orange-4-default);
+  border-radius: 4px;
+  margin: 0 8px;
+  text-align: center;
+  -moz-appearance: textfield;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: rgba(245, 245, 255);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pagination-input-wrapper input:focus {
+  -moz-appearance: textfield;
+  outline: none;
+}
+
+/* Table Link */
+.link-table {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.002em;
+  text-decoration-line: underline;
+  color: var(--Orange-4-default);
+  padding: 5px 16px;
+}
+
+.link-table:hover {
+  color: var(--Orange-4-default);
+  text-decoration-line: underline;
+}
+
+/* Expiry DAte */
+.expiry-date-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.expiry-status {
+  display: flex;
+  align-items: center;
+}
+
+.expiry-status .dot-icon-active {
+  color: #347aff;
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.expiry-status .dot-icon-not-active {
+  color: #878891;
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.expiry-date-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-top: 1px;
+}

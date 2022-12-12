@@ -1,0 +1,191 @@
+.login-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-wrapper .login-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-content {
+  padding-top: 116px;
+}
+
+.login-content .login-form-content {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  opacity: 1;
+}
+
+.login-content p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.7;
+  padding-bottom: 8px;
+}
+
+.login-content input[type="text"],
+.login-content input[type="password"] {
+  background-color: var(--background-bg-lighter);
+  padding: 11px 24px 13px 16px;
+  width: 471px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f5f5ff;
+  letter-spacing: 2px;
+}
+
+.login-content input[type="password"] {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: 2px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: solid 1px var(--outline-input);
+}
+
+.eye-login-icon {
+  position: absolute;
+  top: 38%;
+  right: 8px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: var(--Orange-4-default);
+  font-size: 24px;
+  cursor: pointer;
+
+}
+
+.error-input-login {
+  outline: solid 2px var(--red-error);
+}
+
+.container {
+  display: block;
+  position: relative;
+  margin-bottom: 48px;
+  cursor: pointer;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-left: 35px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: var(--background-bg);
+  border: solid 1px #347aff;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 8px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.login-wrapper button {
+  padding: 16px 24px;
+  gap: 8px;
+  width: 208px;
+  height: 56px;
+  left: 856px;
+  top: 744px;
+  background: var(--Orange-4-default);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.login-wrapper button:hover {
+}
+
+.login-content .forgot-pass-link {
+  justify-self: flex-end;
+  margin-top: 205px;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff7506;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-form .error-login {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--red-error);
+  padding-bottom: 20px;
+}

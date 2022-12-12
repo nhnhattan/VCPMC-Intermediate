@@ -1,0 +1,80 @@
+.topbar-wrapper {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 10;
+}
+
+.change-language {
+  width: 143px;
+  height: 40px;
+  border: 1px solid #c8c8db;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+  cursor: pointer;
+
+}
+
+.change-language p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.change-language .flag-icon {
+  padding-top: 4px;
+  padding-right: 8px;
+}
+
+.change-language .down-icon {
+  padding-top: 4px;
+}
+
+.topbar-info-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-right: 75px;
+  cursor: pointer;
+}
+
+.topbar-info-user .image-user-bar {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 13px;
+}
+
+.topbar-user-content .topbar-user-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #f5f5ff;
+}
+
+.topbar-user-content .topbar-user-role {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+  color: var(--Orange-5);
+}

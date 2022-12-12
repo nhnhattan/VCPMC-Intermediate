@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { LogoPage } from "./assets/svg/LogoPage";
+
+// Router
+import MainRouter from "./Routers/MainRouter";
+
+// Bar
+import Sidebar from "./components/Sidebar/Sidebar";
+import Topbar from "./components/Topbar/Topbar";
+
+// antd
+import { Row, Col } from "antd";
+
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
+  const usercurrentData = useSelector((state: any) => state.users.currentUser);
+  const user = localStorage.getItem("username");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="wrapper">
+        {usercurrentData !== null || user !== null ? (
+          <>
+            <Row style={{height: "100%"}}>
+              <Col span={2}>
+                <Sidebar />
+              </Col>
+              <Col span={22} style={{paddingLeft: 15}}>
+                <Topbar/>
+                <MainRouter />
+              </Col>
+            </Row>
+          </>
+        ) : (
+          <>
+            <MainRouter />
+          </>
+        )}
+      </div>
     </div>
   );
 }
