@@ -1,0 +1,75 @@
+.contract-upadte-table {
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  width: 1105px;
+  max-height: 580px;
+  overflow-y: scroll;
+  padding: 24px;
+}
+
+.input-table-update-contract {
+  height: 36px;
+  background-color: transparent;
+  border: 1px solid #727288;
+  border-radius: 4px;
+  padding: 8px 13px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.002em;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.contract-wrapper .contract-body-wrapper {
+  margin-bottom: 150px;
+}
+
+.contract-wrapper .contract-button-add-footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contract-wrapper .contract-button-add-footer-wrapper button:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 48px;
+  border: 1px solid var(--Orange-4-default);
+  border-radius: 8px;
+  background: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.002em;
+  color: var(--Orange-4-default);
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.contract-wrapper .contract-button-add-footer-wrapper button:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 48px;
+  background: var(--Orange-4-default);
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  cursor: pointer;
+}

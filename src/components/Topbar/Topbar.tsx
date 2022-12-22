@@ -8,10 +8,18 @@ import { userLogout } from "../../redux/actions/userActions";
 
 import { useNavigate } from "react-router-dom";
 import "./topbar.css";
+import { UserType } from "../../Types/UserType";
+
 const Topbar = () => {
+  const userData = useSelector((state: any) => state.users.users);
   const usercurrentData = useSelector((state: any) => state.users.currentUser);
+
+  const userId = localStorage.getItem("userId");
+
+  let currentUser = userData.find((user: UserType) => user.id === userId);
+
   const dispatch: any = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="topbar-wrapper">
@@ -27,14 +35,18 @@ const Topbar = () => {
       <div
         className="topbar-info-user"
         onClick={() => {
-          navigate("/userInfomation")
+          navigate("/userInfomation");
         }}
       >
         <div className="image-user-bar"></div>
-        <div className="topbar-user-content">
-          <p className="topbar-user-name">Ng.Tuyết</p>
-          <p className="topbar-user-role">Admin</p>
-        </div>
+        {usercurrentData ? (
+          <div className="topbar-user-content">
+            <p className="topbar-user-name">{usercurrentData.firstName} .{usercurrentData.lastName}</p>
+            <p className="topbar-user-role">{usercurrentData.role}</p>
+          </div>
+        ) : (
+          <div className="loader"></div>
+        )}
       </div>
     </div>
   );

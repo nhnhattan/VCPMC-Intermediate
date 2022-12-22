@@ -1,0 +1,129 @@
+.tutorial-wrapper {
+  width: 100%;
+  max-height: 1080px;
+  padding-top: 6px;
+  padding-left: 50px;
+  padding-right: 40px;
+}
+
+.tutorial-wrapper .tutorial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.tutorial-wrapper .tutorial-header p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: var(--text-stoke);
+  opacity: 0.7;
+}
+
+.tutorial-wrapper .tutorial-header div {
+  margin: 0 4px;
+}
+
+.tutorial-wrapper h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.tutorial-wrapper .tutorial-body-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tutorial-wrapper .tutorial-body-wrapper .tutorial-body-left {
+  width: 400px;
+  height: 834px;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.tutorial-wrapper .tutorial-body-wrapper .tutorial-body-left .header-left {
+  background: #39394d;
+  height: 76px;
+  padding: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+}
+
+.tutorial-wrapper .tutorial-body-wrapper .tutorial-body-left .menu-tutorial {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-tutorial .tutorial-item {
+  padding: 24px;
+  padding-right: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu-tutorial .active {
+  color: #ff7506;
+  position: relative;
+}
+
+.menu-tutorial .active::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  border-radius: 6px;
+  height: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background: var(--Orange-4-default);
+}
+
+.tutorial-body-wrapper .tutorial-body-right {
+  width: 1211px;
+  height: 834px;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  overflow-y: scroll;
+  padding: 24px;
+}
+
+.tutorial-body-wrapper .tutorial-body-right p:first-child {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ff7506;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.tutorial-body-wrapper .tutorial-body-right .tutorial-content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}

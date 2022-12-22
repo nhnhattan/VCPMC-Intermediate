@@ -1,0 +1,36 @@
+.add-record-wrapper {
+  width: 100%;
+  max-height: 1080px;
+  padding-top: 6px;
+  padding-left: 50px;
+}
+
+.add-record-form-wrapper .input-wrapper {
+    margin-bottom: 24px;
+}
+
+.add-record-form-wrapper .input-wrapper p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.add-record-form-wrapper .input-wrapper input {
+  width: 557px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #727288;
+  border-radius: 8px;
+  padding: 12px 24px;
+  caret-color: white;
+  letter-spacing: 0.002em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-stoke);
+}

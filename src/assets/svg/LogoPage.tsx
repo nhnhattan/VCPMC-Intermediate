@@ -10,7 +10,7 @@ export const LogoPage = (props: any) => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <g clip-path="url(#clip0_31_1665)">
+      <g clipPath="url(#clip0_31_1665)">
         <rect width="240" height="240" rx="120" fill="white" />
         <rect x="-7.5" width="287.5" height="217.5" fill="url(#pattern0)" />
       </g>

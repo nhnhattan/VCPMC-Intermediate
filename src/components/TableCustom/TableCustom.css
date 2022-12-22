@@ -5,6 +5,8 @@
   border-radius: 16px;
   padding: 16px 24px 22px 24px;
   margin-bottom: 60px;
+  margin: 0;
+  width: 100%;
 }
 
 .ant-table-wrapper {

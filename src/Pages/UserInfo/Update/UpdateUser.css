@@ -1,0 +1,87 @@
+.information-input-date {
+  margin-right: 24px;
+}
+
+.information-input-date p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.information-input-date
+  :where(.css-dev-only-do-not-override-1ij74fp).ant-picker {
+  margin-top: 0px;
+  background-color: var(--background-bg-lighter);
+}
+
+.information-input-date
+  :where(.css-dev-only-do-not-override-1ij74fp).ant-picker {
+  border: none;
+}
+
+.user-infomation-wrapper .button-update-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.user-infomation-wrapper .button-update-wrapper button:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 48px;
+  border: 1px solid #ff7506;
+  border-radius: 8px;
+  background: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.002em;
+  color: #ff7506;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+
+.user-infomation-wrapper .button-update-wrapper button:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 48px;
+  background: #ff7506;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.upload-image-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.image-user {
+  position: relative;
+}

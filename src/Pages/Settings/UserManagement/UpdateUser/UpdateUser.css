@@ -1,0 +1,273 @@
+.manage-update-user-wrapper {
+  width: 100%;
+  max-height: 1080px;
+  padding-top: 6px;
+}
+
+.manage-update-user-wrapper .manage-update-user-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.manage-update-user-wrapper .manage-update-user-header div {
+  margin: 0 4px;
+}
+
+.manage-update-user-wrapper .manage-update-user-header p,
+.manage-update-user-wrapper
+  .manage-update-user-header
+  .manage-update-user-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #f5f5ff;
+  opacity: 0.7;
+}
+
+.manage-update-user-wrapper h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.002em;
+  color: #e5e5e5;
+  margin-bottom: 40px;
+}
+
+.manage-update-user-wrapper .manage-update-user-body {
+  display: flex;
+}
+
+.manage-update-user-body .update-user-col-left,
+.manage-update-user-body .update-user-col-right {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+}
+
+.manage-update-user-body .update-user-col-left .update-user-input-wrapper,
+.manage-update-user-body .update-user-col-right .update-user-input-wrapper {
+  margin-bottom: 24px;
+}
+
+.manage-update-user-body .update-user-col-left .update-user-input-wrapper p,
+.manage-update-user-body .update-user-col-right .update-user-input-wrapper p {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.manage-update-user-body
+  .update-user-col-left
+  .update-user-input-wrapper
+  .required-icon,
+.manage-update-user-body
+  .update-user-col-right
+  .update-user-input-wrapper
+  .required-icon {
+  margin-left: 4px;
+}
+
+.manage-update-user-body .update-user-col-left .update-user-input-wrapper input,
+.manage-update-user-body
+  .update-user-col-right
+  .update-user-input-wrapper
+  input {
+  width: 422px;
+  height: 48px;
+  background-color: var(--background-bg-lighter);
+  border: 1px solid #727288;
+  padding: 11px 24px 13px 16px;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #f5f5ff;
+}
+
+.manage-update-user-body
+  .update-user-col-left
+  .update-user-input-wrapper
+  input:focus,
+.manage-update-user-body
+  .update-user-col-right
+  .update-user-input-wrapper
+  input:focus {
+  border: none;
+}
+
+.manage-update-user-body .update-user-col-left .update-user-input-calendar p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+}
+
+.manage-update-user-body .update-user-col-left .update-user-input-calendar {
+  margin-bottom: 24px;
+}
+
+.manage-update-user-wrapper .required-label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  color: rgb(245, 245, 255, 0.5);
+  display: flex;
+  align-items: center;
+}
+.manage-update-user-wrapper .required-label span {
+  margin-right: 4px;
+}
+
+.manage-update-user-wrapper .manage-update-user-button-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.manage-update-user-wrapper
+  .manage-update-user-button-wrapper
+  button:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 48px;
+  border: 1px solid #ff7506;
+  border-radius: 8px;
+  background: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.002em;
+  color: #ff7506;
+  margin-right: 24px;
+  cursor: pointer;
+}
+
+.manage-update-user-wrapper
+  .manage-update-user-button-wrapper
+  button:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 48px;
+  background: #ff7506;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.manage-update-user-body-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button-user-management-wrapper {
+  width: 110px;
+  background: #2f2f41;
+  border-radius: 16px 0px 0px 16px;
+  overflow: hidden;
+  height: 265px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-user-management-wrapper .button-manage-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 130px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.button-user-management-wrapper .button-delete-user p {
+  margin-top: 10px;
+}
+
+.update-user-input-password {
+  position: relative;
+}
+
+.update-user-input-password .see-password-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 96px;
+  cursor: pointer;
+  font-size: 26px;
+  color: var(--Orange-4-default);
+}
+
+/* Select Custom */
+
+.upadte-user-manage-select .ant-select-arrow {
+  color: var(--Orange-4-default) !important;
+}
+
+.upadte-user-manage-select .ant-select-arrow .anticon-down svg {
+  width: 13px !important;
+  height: 13px !important;
+  stroke: solid 10px var(--Orange-4-default) !important;
+}
+
+.upadte-user-manage-select .ant-select-selector {
+  background: #2b2b3f !important;
+  border: 1px solid #727288 !important;
+
+  height: 48px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upadte-user-manage-select .ant-select-selector .ant-select-selection-item {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #f5f5ff !important;
+}

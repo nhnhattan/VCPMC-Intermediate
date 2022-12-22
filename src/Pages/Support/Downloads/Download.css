@@ -1,0 +1,141 @@
+.download-wrapper {
+  width: 100%;
+  max-height: 1080px;
+  padding-top: 6px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.download-wrapper .download-bg {
+  position: absolute;
+  top: -82px;
+  left: -85px;
+  z-index: 20;
+}
+
+.download-wrapper .download-header {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: rgba(245, 245, 255, 0.7);
+  margin-bottom: 2px;
+}
+
+.download-wrapper .download-header div {
+  margin: 0 4px;
+}
+
+.download-wrapper h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.002em;
+  color: #e5e5e5;
+}
+
+.download-wrapper .body-wrapper .body-header {
+  position: relative;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.download-wrapper .body-wrapper .body-header h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff9f4;
+}
+
+.content-app {
+  color: var(--Orange-4-default);
+}
+
+.download-wrapper .body-wrapper .body-header::before {
+  content: "";
+  position: absolute;
+  width: 480px;
+  height: 2px;
+  /* background: red; */
+  bottom: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: repeating-linear-gradient(
+    to right,
+    #ff7506 0,
+    #ff7506 8px,
+    rgba(255, 255, 255, 0) 8px,
+    rgba(255, 255, 255, 0) 20px
+  );
+}
+
+.body-wrapper .body-content-tutorial {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 70px;
+}
+.download-button-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.body-wrapper .row-download {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 72px;
+}
+
+.body-wrapper .row-download .download-button-wrapper {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 373px;
+  width: 350px;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+}
+
+
+
+.body-wrapper  .row-download .download-button-wrapper button {
+  align-items: center;
+  padding: 16px 24px;
+  width: 208px;
+  height: 56px;
+  background: #ff7506;
+  border-radius: 8px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.download-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+}

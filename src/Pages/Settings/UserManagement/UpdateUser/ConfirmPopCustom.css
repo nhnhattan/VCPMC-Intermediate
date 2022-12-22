@@ -1,0 +1,76 @@
+:where(.css-dev-only-do-not-override-1ij74fp).ant-popover .ant-popover-inner {
+  background-color: var(--background-bg-lightest);
+}
+
+:where(.css-dev-only-do-not-override-1ij74fp).ant-popconfirm
+  .ant-popconfirm-inner-content {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  width: 250px;
+}
+
+:where(.css-dev-only-do-not-override-1ij74fp).ant-popconfirm
+  .ant-popconfirm-message {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ant-popconfirm-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.ant-popconfirm-buttons button:first-child {
+  background: var(--red-error);
+  height: 40px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 12px;
+}
+
+.ant-popconfirm-buttons button:first-child:hover {
+  color: #ffffff;
+  background: #ff1818;
+}
+
+.ant-popconfirm-buttons button:last-child {
+  background: var(--success-message);
+  height: 40px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  padding: 8px 16px;
+}
+
+.ant-popconfirm-buttons button:last-child:hover {
+  color: #ffffff;
+  background: #10a803;
+}
+
+:where(.css-dev-only-do-not-override-1ij74fp).ant-popover
+  .ant-popover-arrow:before {
+  background: var(--background-bg-lightest);
+}
+
+:where(.css-dev-only-do-not-override-1ij74fp).ant-popconfirm .ant-popconfirm-message >.ant-popconfirm-message-icon .anticon {
+    font-size: 20px;
+    color: #FF4747;
+}

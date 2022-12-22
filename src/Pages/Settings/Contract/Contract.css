@@ -1,0 +1,121 @@
+.contract-wrapper {
+  width: 100%;
+  max-height: 1080px;
+  padding-top: 6px;
+  padding-left: 60px;
+}
+
+.contract-wrapper .contract-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.contract-wrapper .contract-header p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: var(--text-stoke);
+  opacity: 0.7;
+}
+
+.contract-wrapper .contract-header div {
+  margin: 0 4px;
+}
+
+.contract-wrapper h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.002em;
+  color: #e5e5e5;
+  padding-bottom: 24px;
+}
+
+.contract-wrapper .contract-col-wrapper {
+  display: flex;
+}
+
+.contract-wrapper .contract-body-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contract-col-left .table-wrapper {
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  max-width: 868px;
+  padding: 16px 24px;
+}
+
+.contract-body-wrapper .contract-col-right {
+  width: 649px;
+  height: 177px;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  margin-left: 24px;
+  padding: 24px;
+}
+
+.contract-body-wrapper .contract-col-right h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #e5e5e5;
+  margin-bottom: 40px;
+}
+
+.contract-body-wrapper .contract-col-right p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+}
+
+.contract-body-wrapper .contract-col-right p span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  opacity: 0.7;
+  padding-left: 16px;
+}
+
+.contract-body-wrapper .col-buton-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px;
+  background: #2f2f41;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.col-buton-wrapper .button-contract-item {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.col-buton-wrapper .button-contract-item p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-top: 10px;
+}

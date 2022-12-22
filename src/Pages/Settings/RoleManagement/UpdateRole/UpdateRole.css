@@ -1,0 +1,151 @@
+.update-role-wrapper {
+  width: 100%;
+  max-height: 1080px;
+  padding-top: 6px;
+}
+
+.update-role-wrapper .update-role-header {
+  display: flex;
+  align-items: center;
+}
+
+.update-role-wrapper .update-role-header p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: var(--text-stoke);
+  opacity: 0.7;
+}
+
+.update-role-wrapper .update-role-header div {
+  margin: 0 4px;
+}
+
+.update-role-wrapper .update-role-header .update-role-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: var(--text-stoke);
+  opacity: 0.7;
+}
+
+.update-role-wrapper .update-role-header .update-role-link:hover {
+  color: var(--text-stoke);
+  opacity: 0.7;
+}
+
+.update-role-wrapper h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.002em;
+  color: #e5e5e5;
+  margin-top: 2px;
+  margin-bottom: 52px;
+}
+
+.update-role-wrapper .update-role-body-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.update-role-wrapper .update-role-body-wrapper .update-role-col-left {
+  max-width: 571px;
+}
+
+.update-role-col-left .input-wrapper {
+  margin-bottom: 32px;
+}
+
+.update-role-col-left .input-wrapper p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.update-role-col-left .input-wrapper input[type="text"] {
+  width: 557px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid #727288;
+  border-radius: 8px;
+  padding: 12px 24px;
+  caret-color: white;
+  letter-spacing: 0.002em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-stoke);
+}
+
+.update-role-col-left .input-wrapper input[type="text"]:focus {
+  border: none;
+}
+
+.update-role-col-left .input-wrapper textarea {
+  width: 557px;
+  height: 120px;
+  background-color: transparent;
+  border: 1px solid #727288;
+  border-radius: 8px;
+  padding: 12px 24px;
+  caret-color: white;
+  letter-spacing: 0.002em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-stoke);
+  text-align: top;
+}
+.update-role-col-left .input-wrapper textarea:focus {
+  outline: solid 1px var(--outline-input);
+  border: none;
+}
+
+.update-role-body-wrapper .update-role-col-right {
+  height: 100%;
+  margin-right: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.update-role-col-right .table-update-role-wrapper {
+  display: flex;
+  height: 680px;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  padding: 16px 24px;
+  margin-top: 14px;
+}
+
+.table-role-col-left .table-group-row-1 {
+  position: relative;
+}
+
+.update-role-col-right .table-role-col-left .table-group-row-1::after {
+  position: absolute;
+  content: "";
+  top: 132%;
+  width: 433%;
+  height: 2px;
+  background: #f5f5ff;
+  opacity: 0.5;
+}

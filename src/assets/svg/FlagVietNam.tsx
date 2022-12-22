@@ -9,7 +9,7 @@ export const FlagVietNam = (props: any) => {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <g clip-path="url(#clip0_8012_2332)">
+      <g clipPath="url(#clip0_8012_2332)">
         <path
           d="M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z"
           fill="#D80027"

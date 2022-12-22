@@ -1,0 +1,173 @@
+.feedback-wrapper {
+  width: 100%;
+  max-height: 1080px;
+  padding-top: 6px;
+  padding-left: 50px;
+}
+
+.feedback-wrapper .feedback-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.feedback-wrapper .feedback-header p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: var(--text-stoke);
+  opacity: 0.7;
+}
+
+.feedback-wrapper .feedback-header .feedback-header-icon {
+  margin: 0 4px;
+}
+
+.feedback-wrapper h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.002em;
+  color: #e5e5e5;
+  margin-bottom: 24px;
+}
+
+.form-feedback-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.form-feedback-box {
+  height: 750px;
+  width: 764px;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  padding: 40px 32px;
+}
+
+.form-feedback-wrapper .form-feedback-box .form-feedback-item {
+  margin-bottom: 24px;
+}
+
+.form-feedback-wrapper .form-feedback-box .form-feedback-item p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.form-feedback-wrapper .form-feedback-box .form-feedback-item input {
+  width: 700px;
+  height: 48px;
+  border: 1px solid rgba(114, 114, 136, 0.2);
+  background: var(--background-bg-lighter);
+  border-radius: 8px;
+  padding: 11px 24px 13px 16px;
+  caret-color: white;
+  letter-spacing: 0.002em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-stoke);
+}
+
+.form-feedback-wrapper .form-feedback-box .form-feedback-item textarea {
+  width: 700px;
+  height: 300px;
+  background-color: var(--background-bg-lighter);
+  border: 1px solid rgba(114, 114, 136, 0.3);
+  border-radius: 8px;
+  padding: 12px 24px 12px 16px;
+  caret-color: white;
+  letter-spacing: 0.002em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-stoke);
+  text-align: top;
+}
+
+.form-feedback-wrapper .form-feedback-box .form-feedback-item textarea:focus {
+  outline: solid 1px var(--outline-input);
+}
+
+.feedback-wrapper .button-feedback-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 41px;
+}
+
+.feedback-wrapper .button-feedback-wrapper button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 48px;
+  background: #ff7506;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+/* Select */
+.feedback-select .ant-select-arrow {
+  color: var(--Orange-4-default) !important;
+}
+
+.feedback-select .ant-select-arrow .anticon-down svg {
+  width: 13px !important;
+  height: 13px !important;
+  stroke: solid 10px var(--Orange-4-default) !important;
+  justify-self: flex-end !important;
+}
+
+.feedback-select .ant-select-selector {
+  background-color: var(--background-bg-lighter) !important;
+  border: 1px solid rgba(114, 114, 136, 0.3) !important;
+  height: 48px !important;
+  display: flex;
+  align-items: center;
+  padding: 12px 12px 12px 16px !important;
+}
+
+.feedback-select
+  :where(.css-dev-only-do-not-override-1ij74fp).ant-select
+  .ant-select-selection-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #727288;
+}
+
+.feedback-select
+  :where(.css-dev-only-do-not-override-1ij74fp).ant-select-single
+  .ant-select-selector {
+  letter-spacing: 0.002em;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-stoke) !important;
+}

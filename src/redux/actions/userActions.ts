@@ -20,13 +20,11 @@ import {
 import { db } from "../../firebase";
 import { Dispatch } from "redux";
 
-type UserType = {
-  id: string;
-  username: string;
-  password: string;
-};
+// Types
+import { UserType } from "../../Types/UserType";
 
 type dispatchProps = { type: string };
+
 const loadUsers = async (dispatch: Dispatch) => {
   try {
     dispatch({ type: FETCH_USER_REQUEST });
@@ -63,4 +61,20 @@ const userLogout = (user?: UserType | null) => async (dispatch: Dispatch) => {
   });
 };
 
-export { loadUsers, userLogin, userLogout };
+const getUserById = (userId: any) => async (dispatch: Dispatch) => {
+  const docRef = doc(db, "users", userId);
+  const docSnap = await getDoc(docRef);
+  let dataUserCurrent: any
+  if (docSnap.exists()) {
+    dataUserCurrent = docSnap.data()   
+  } else {
+    console.log("No such document!");
+  }
+
+  dispatch({
+    type: LOGIN,
+    currentUser: dataUserCurrent,
+  });
+};
+
+export { loadUsers, userLogin, userLogout, getUserById };

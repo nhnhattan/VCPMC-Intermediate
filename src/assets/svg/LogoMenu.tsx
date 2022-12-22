@@ -10,7 +10,7 @@ export const LogoMenu = () => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <g clip-path="url(#clip0_8077_7210)">
+      <g clipPath="url(#clip0_8077_7210)">
         <rect width="96" height="96" rx="48" fill="white" />
         <rect x="-3" width="115" height="87" fill="url(#pattern0)" />
       </g>

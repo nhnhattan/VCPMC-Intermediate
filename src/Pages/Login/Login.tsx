@@ -19,22 +19,18 @@ import { db } from "../../firebase";
 // Redux
 import { useDispatch, useSelector } from "react-redux";
 import { loadUsers, userLogin } from "../../redux/actions/userActions";
-import { State } from "../../redux/reducers";
 
 // SVG
 import { LogoPage } from "../../assets/svg/LogoPage";
 import { Eye } from "../../assets/svg/Eye";
 import { FiEye, FiEyeOff } from "react-icons/fi";
 // React-Router
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 
 import "./login.css";
 
-type UserType = {
-  id: string;
-  username: string;
-  password: string;
-};
+//Types
+import { UserType } from "../../Types/UserType";
 
 const Login = () => {
   const usernameRef = useRef<HTMLInputElement>(null);
@@ -48,13 +44,14 @@ const Login = () => {
   const [errortext, setErrortext] = useState("");
   const [isEye, setIsEye] = useState(false);
 
+  const login = localStorage.getItem("login");
+
   let passwordInput = document.getElementById(
     "password-input"
   ) as HTMLInputElement;
   let rememberInput = document.getElementById(
     "remember-input"
   ) as HTMLInputElement;
-
 
   const dispatch: any = useDispatch();
   useEffect(() => {
@@ -80,11 +77,12 @@ const Login = () => {
       if (currentUser) {
         alert("Đăng nhập thành công");
         dispatch(userLogin(currentUser));
-        if(rememberInput.checked) {
-          localStorage.setItem('username', currentUser.username)
+        localStorage.setItem("login", "true");
+        localStorage.setItem("userId", currentUser.id )
+        if (rememberInput.checked) {
+          localStorage.setItem("username", currentUser.username);
         } else {
-          localStorage.removeItem('username')
-          
+          localStorage.removeItem("username");
         }
         navigate("/");
         // console.log(usercurrentData);
@@ -97,7 +95,9 @@ const Login = () => {
     }
   };
 
-  return (
+  return login === "true" ? (
+    <Navigate to={"/error-page"} />
+  ) : (
     <div className="login-wrapper">
       <div className="login-content">
         <LogoPage className="logo" />
@@ -120,13 +120,13 @@ const Login = () => {
                 className={errortext ? `error-input-login` : ""}
                 id="password-input"
               />
-              
+
               {isEye ? (
                 <FiEyeOff
                   className="eye-login-icon"
                   onClick={() => {
                     passwordInput.type = "password";
-                    setIsEye(!isEye)
+                    setIsEye(!isEye);
                   }}
                 />
               ) : (
@@ -134,12 +134,10 @@ const Login = () => {
                   className="eye-login-icon"
                   onClick={() => {
                     passwordInput.type = "text";
-                    setIsEye(!isEye)
+                    setIsEye(!isEye);
                   }}
-
                 />
               )}
-              
             </div>
           </div>
           <p className="error-login">{errortext}</p>

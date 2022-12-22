@@ -1,14 +1,14 @@
-.ant-select-arrow {
+.select-wrap .ant-select-arrow {
   color: var(--Orange-4-default) !important;
 }
 
-.ant-select-arrow .anticon-down svg {
+.select-wrap .ant-select-arrow .anticon-down svg {
   width: 13px !important;
   height: 13px !important;
   stroke: solid 10px var(--Orange-4-default) !important;
 }
 
-.ant-select-selector {
+.select-wrap .ant-select-selector {
   background-color: #1e1e2e !important;
   border: 1px solid #ff7506 !important;
   height: 40px !important;
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.ant-select-selector .ant-select-selection-item {
+.select-wrap .ant-select-selector .ant-select-selection-item {
   font-style: normal !important;
   font-weight: 400 !important;
   font-size: 16px !important;
@@ -29,7 +29,6 @@
 }
 
 .ant-select-dropdown-placement-bottomLeft {
-  top: 275px !important;
   background-color: #3e3e5b !important;
 }
 
@@ -40,8 +39,6 @@
   line-height: 24px;
   letter-spacing: -0.002em;
   color: #f5f5ff !important;
-  /* background: transparent !important;
-  background-color: transparent !important; */
 }
 
 .ant-select-item-option-selected {

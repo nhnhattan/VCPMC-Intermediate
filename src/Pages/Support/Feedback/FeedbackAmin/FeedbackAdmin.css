@@ -1,0 +1,292 @@
+.feedback-admin-wrapper {
+  width: 100%;
+  display: flex;
+}
+.feedback-admin-wrapper .feedback-admin-col-left {
+  width: 571px;
+  height: 834px;
+  background: #2b2b3f;
+  border-radius: 16px;
+  overflow-y: scroll;
+}
+
+.feedback-admin-col-left .feedback-admin-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.feedback-admin-col-left .feedback-admin-item .item-user-img {
+  width: 56px;
+  height: 56px;
+  background-image: url("https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 18px;
+}
+
+.feedback-admin-col-left .feedback-admin-item .item-user-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper
+  .item-user-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper
+  .item-user-info
+  p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper
+  .item-user-info
+  p:last-child {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.015em;
+  color: rgba(245, 245, 255, 0.8);
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper
+  .item-problem-content-wrapper
+  .item-ploblem-content {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  color: rgb(255, 255, 255, 0.8);
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper
+  .item-problem-content-wrapper
+  .item-ploblem-content
+  .dot-distance-icon {
+  margin: 0 8px;
+  font-size: 6px;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper
+  .item-problem-content-wrapper
+  .unseen-icon {
+  font-size: 24px;
+  color: #ff7506;
+}
+
+.item-problem-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-admin-col-left .feedback-admin-item .item-user-wrapper-unseen {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper-unseen
+  .item-user-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper-unseen
+  .item-user-info
+  p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper-unseen
+  .item-user-info
+  p:last-child {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper-unseen
+  .item-problem-content-wrapper
+  .item-ploblem-content {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper-unseen
+  .item-problem-content-wrapper
+  .item-ploblem-content
+  p:first-child {
+  max-width: 220px;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper-unseen
+  .item-problem-content-wrapper
+  .item-ploblem-content
+  .dot-distance-icon {
+  margin: 0 8px;
+  font-size: 6px;
+}
+
+.feedback-admin-col-left
+  .feedback-admin-item
+  .item-user-wrapper-unseen
+  .item-problem-content-wrapper
+  .unseen-icon {
+  font-size: 24px;
+  color: #ff7506;
+}
+
+.item-problem-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback-admin-wrapper .feedback-admin-col-right {
+  height: 834px;
+  width: 1014px;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  margin-left: 24px;
+  position: relative;
+}
+
+.feedback-admin-wrapper .feedback-admin-col-right .no-choose-problem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-long-box {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  max-width: 220px;
+}
+
+.mail-feedback-wrapper {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-feedback-wrapper .mail-feedback-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mail-feedback-wrapper .mail-feedback-header .user-infomation {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+}
+
+.mail-feedback-wrapper .mail-feedback-header .user-infomation .img-user {
+  width: 56px;
+  height: 56px;
+  background-image: url("https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 18px;
+}
+
+.mail-feedback-header .time-wrapper {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.015em;
+  color: #f5f5ff;
+  opacity: 0.5;
+}
+
+.mail-feedback-wrapper .problem-content {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin: 16px 0 24px 0;
+}
+
+.mail-feedback-wrapper .problem-mail-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+}

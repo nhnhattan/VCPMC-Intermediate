@@ -4,17 +4,17 @@ import {
   FETCH_USER_ERROR,
   LOGIN, LOGOUT
 } from "../constants/userConstans";
-type UserType = {
-  id: string;
-  username: string;
-  password: string;
-};
+
+// Types
+import { UserType } from "../../Types/UserType";
 type ActionProps = {
   type: string;
   message: string;
   users: UserType;
   currentUser?: UserType | null;
 };
+
+
 const initState = {
   request: false,
   success: false,
@@ -26,7 +26,20 @@ const initState = {
       password: "",
     },
   ],
-  currentUser: null,
+  currentUser: {
+    id: "",
+    firstName: "",
+    lastName: "",
+    fullName: "",
+    birthday: "01/01/1111",
+    phone: "",
+    email: "",
+    username: "",
+    password: "",
+    role: "",
+    timeOut: "",
+    userstatus: false 
+  },
 };
 
 const userReducer = (state = initState, action: ActionProps) => {

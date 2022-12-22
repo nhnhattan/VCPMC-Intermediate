@@ -1,0 +1,51 @@
+.select-add-user {
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.select-add-user .ant-select-arrow {
+  color: var(--Orange-4-default) !important;
+}
+
+.select-add-user .ant-select-arrow .anticon-down svg {
+  width: 13px !important;
+  height: 13px !important;
+  stroke: solid 10px var(--Orange-4-default) !important;
+  justify-self: flex-end !important;
+}
+
+.select-add-user .ant-select-selector {
+  background-color: #1e1e2e !important;
+  border: 1px solid rgba(114, 114, 136) !important;
+  width: 422px !important;
+  height: 48px !important;
+  display: flex;
+  align-items: center;
+  padding: 12px 12px 12px 16px !important;
+}
+
+.select-add-user .ant-select-selector .ant-select-selection-item {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: rgba(245, 245, 255, 0.5) !important;
+}
+
+.select-add-user .ant-select-dropdown-placement-bottomLeft {
+  background-color: #3e3e5b !important;
+}
+
+.select-add-user .ant-select-item-option-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+  color: #ffffff !important;
+}
+
+.select-add-user .ant-select-item-option-selected {
+  background: var(--background-bg-lighter) !important;
+}
