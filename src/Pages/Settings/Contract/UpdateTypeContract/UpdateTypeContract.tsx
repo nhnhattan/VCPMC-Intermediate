@@ -50,7 +50,7 @@ const UpdateTypeContract = () => {
 
   const [dataFull, setDataFull] = useState([
     {
-      key: "1",
+      key: 1,
       id: "",
       typeContract: "",
       revenueContract: "",
@@ -249,14 +249,14 @@ const UpdateTypeContract = () => {
     dataSource = [
       ...dataSource,
       {
-        key: String(numRow + 1),
+        key: Number(numRow + 1),
         id: "",
         typeContract: "Trọn gói",
         revenueContract: "20%",
         dateApply: "dd/mm/yyyy hh:ss:mm",
       },
       {
-        key: String(numRow + 2),
+        key: Number(numRow + 2),
         id: "",
         typeContract: "Giá trị bài hát/ lượt phát",
         revenueContract: "0%",
@@ -268,13 +268,46 @@ const UpdateTypeContract = () => {
 
   const handleDelete = async () => {
     let dataSource = dataFull;
-    // await dataSource.pop();
-    // await dataSource.pop();
+    if (numRow > datalength) {
+      await dataSource.pop();
+      await dataSource.pop();
+      await setNumRow(numRow - 2);
+      dataSource = [...dataSource];
+      dataSource.sort((a: any, b: any) => a.key - b.key);
+      setDataFull(dataSource);
+    } else if (numRow <= datalength) {
+      await deleteDoc(doc(db, "typecontracts", dataFull[numRow - 1].id));
+      await deleteDoc(doc(db, "typecontracts", dataFull[numRow - 2].id));
+      await dataSource.pop();
+      await dataSource.pop();
+      await setNumRow(numRow - 2);
+      dataSource = [...dataSource];
+      dataSource.sort((a: any, b: any) => a.key - b.key);
 
-    // await setNumRow(numRow - 2);
-    // // await setDatalength(datalength - 2);
-    // dataSource = [...dataSource];
-    // setDataFull(dataSource);
+      setDataFull(dataSource);
+    } else if (numRow === 0) {
+      toast.error("Không còn gì để xóa!", {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+    await dispatch(loadTypeContracts);
+    toast.success("Xóa thành công!", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
   };
 
   const handleUpdate = async () => {
@@ -284,7 +317,7 @@ const UpdateTypeContract = () => {
           const day = data.dateApply.split(" ")[0];
           const time = data.dateApply.split(" ")[1];
           addDoc(collection(db, "typecontracts"), {
-            key: data.key,
+            key: Number(data.key),
             typeContract: data.typeContract,
             revenueContract: data.revenueContract,
             dayApply: day,
@@ -302,7 +335,6 @@ const UpdateTypeContract = () => {
               theme: "light",
             });
           });
-          console.log(dataFull);
         }
         if (datakey.includes(data.key)) {
           const day = data.dateApply.split(" ")[0];
@@ -316,6 +348,7 @@ const UpdateTypeContract = () => {
           });
         }
       });
+      dispatch(loadTypeContracts);
 
       toast.success("Cập nhật thanh cong", {
         position: "top-center",

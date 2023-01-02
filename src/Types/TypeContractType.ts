@@ -1,6 +1,6 @@
 export type TypeContractType = {
   id: string;
-  key: string;
+  key: number;
   typeContract: string;
   revenueContract: string;
   dayApply: string;

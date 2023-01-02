@@ -1,0 +1,151 @@
+.control-cycle-wrapper {
+  width: 100%;
+  max-height: 1080px;
+  padding-top: 6px;
+  padding-left: 50px;
+  padding-right: 80px;
+}
+
+.control-cycle-wrapper .control-cycle-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.control-cycle-wrapper .control-cycle-header p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: var(--text-stoke);
+  opacity: 0.7;
+}
+
+.control-cycle-wrapper .control-cycle-header div {
+  margin: 0 4px;
+}
+
+.control-cycle-wrapper h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.002em;
+  color: #e5e5e5;
+  padding-bottom: 24px;
+}
+
+.control-cycle-wrapper .control-cycle-body {
+  height: 750px;
+  width: 100%;
+  background: rgba(47, 47, 65, 0.7);
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.control-cycle-wrapper .control-cycle-body h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #e5e5e5;
+  margin-bottom: 54px;
+}
+
+.radio-control-cycle-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-quarter {
+  display: flex;
+}
+
+.quater-radio-div-wrapper {
+  padding-top: 8px;
+}
+
+.quater-radio-div-wrapper p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.quater-radio-div-wrapper p span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-left: 30px;
+}
+
+.radio-content {
+  padding-bottom: 20px;
+}
+
+.control-cycle-wrapper
+  :where(.css-dev-only-do-not-override-1ij74fp).ant-radio-wrapper
+  .ant-radio {
+  top: 6px;
+}
+
+.month-radio-div-wrapper {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.month-radio-div-wrapper div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.month-radio-div-wrapper div p {
+  margin-right: 85px;
+}
+
+.month-radio-div-wrapper div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.control-cycle-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.control-cycle-button-wrapper button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 48px;
+  background: #ff7506;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

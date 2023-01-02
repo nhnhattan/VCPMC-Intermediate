@@ -12,7 +12,7 @@ type ActionProps = {
 };
 
 const initState = {
-  roleData: [],
+  feedbackData: [],
 };
 
 const feedbackReducer = (state = initState, action: ActionProps) => {

@@ -13,6 +13,7 @@ import Login from "../Pages/Login/Login";
 import Record from "../Pages/Record/Record";
 import ManageApprove from "../Pages/Record/ManageApprove/ManageApprove";
 import AddRecord from "../Pages/Record/ManageApprove/AddRecord/AddRecord";
+import UpdateRecord from "../Pages/Record/ManageApprove/UpdateRecord/UpdateRecord";
 
 // Playlist
 import Playlist from "../Pages/Playlist/Playlist";
@@ -35,6 +36,13 @@ import Configuration from "../Pages/Settings/Configuration/Configuration";
 // Contract
 import Contract from "../Pages/Settings/Contract/Contract";
 import UpdateTypeContract from "../Pages/Settings/Contract/UpdateTypeContract/UpdateTypeContract";
+import UpdateWarning from "../Pages/Settings/Contract/UpdateWarning/UpdateWarning";
+// GenreManagement
+import ListGenre from "../Pages/Settings/GenreManagement/ListGenre";
+import UpdateGenre from "../Pages/Settings/GenreManagement/UpdateGenre/UpdateGenre";
+// ControlCycle
+import ControlCycle from "../Pages/Settings/ControlCycle/ControlCycle";
+
 // Support
 import Feedback from "../Pages/Support/Feedback/Feedback";
 import Downloads from "../Pages/Support/Downloads/Downloads";
@@ -42,6 +50,7 @@ import Tutorial from "../Pages/Support/Tutorial/Tutorial";
 
 // ErrorPage
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+
 const MainRouter = () => {
   return (
     <Routes>
@@ -52,6 +61,10 @@ const MainRouter = () => {
         <Route
           path="/record/Manage-approve/add-record"
           element={<AddRecord />}
+        />
+        <Route
+          path="/record/updateRecord/:RecordId"
+          element={<UpdateRecord />}
         />
 
         <Route path="/playlist" element={<Playlist />} />
@@ -73,10 +86,14 @@ const MainRouter = () => {
         />
         <Route path="/configuration" element={<Configuration />} />
         <Route path="/contract" element={<Contract />} />
-        <Route path="/contract/updateTypeContract" element={<UpdateTypeContract />} />
-
-
-
+        <Route
+          path="/contract/updateTypeContract"
+          element={<UpdateTypeContract />}
+        />
+        <Route path="/contract/updateWarningWork" element={<UpdateWarning />} />
+        <Route path="/GenreManagement" element={<ListGenre />} />
+        <Route path="/GenreManagement/UpdateGenre" element={<UpdateGenre />} />
+        <Route path="/ControlCycle" element={<ControlCycle />} />
 
         <Route path="/support/feedback" element={<Feedback />} />
         <Route path="/support/downloads" element={<Downloads />} />

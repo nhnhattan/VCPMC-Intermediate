@@ -205,7 +205,7 @@
 .tab-wrapper-open {
   /* width: 100%; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-bottom: 29px;
 }
 
@@ -294,6 +294,19 @@
   color: #f5f5ff;
 }
 
+.card-item-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 18px;
+}
+
+.card-item-footer .card-item-update {
+  cursor: pointer;
+}
+
+
+
 @keyframes selectbox {
   from {
     top: 50%;
@@ -304,3 +317,4 @@
     opacity: 1;
   }
 }
+

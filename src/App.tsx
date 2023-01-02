@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import "../node_modules/video-react/dist/video-react.css";
+
 import { LogoPage } from "./assets/svg/LogoPage";
 
 import { useLocation } from "react-router-dom";
@@ -14,7 +16,6 @@ import Topbar from "./components/Topbar/Topbar";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 // antd
 import { Row, Col } from "antd";
 
@@ -24,6 +25,8 @@ import { loadUsers } from "./redux/actions/userActions";
 import { getUserById } from "./redux/actions/userActions";
 import { loadFeedbacks } from "./redux/actions/feedbackActions";
 import { loadTypeContracts } from "./redux/actions/typeContractAction";
+import { loadGenres } from "./redux/actions/genresActions";
+import { loadRecord } from "./redux/actions/recordActions";
 
 import { useDispatch, useSelector } from "react-redux";
 
@@ -38,7 +41,6 @@ function App() {
   const userId = localStorage.getItem("userId");
   const login = localStorage.getItem("login");
 
-  localStorage.setItem("ThemeId", "1")
   const location = useLocation();
   const dispatch = useDispatch<any>();
   useEffect(() => {
@@ -46,7 +48,9 @@ function App() {
     dispatch(loadUsers);
     dispatch(getUserById(userId));
     dispatch(loadFeedbacks);
-    dispatch(loadTypeContracts)
+    dispatch(loadTypeContracts);
+    dispatch(loadGenres);
+    dispatch(loadRecord)
   }, []);
 
   const [barWidth, setBarWidth] = useState(true);

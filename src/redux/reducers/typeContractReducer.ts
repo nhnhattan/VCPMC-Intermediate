@@ -5,15 +5,25 @@ import {
 } from "../constants/typeContractConstans";
 
 import { TypeContractType } from "../../Types/TypeContractType";
-
+import { CycleControlType } from "../../Types/CycleControlType";
+type warningDataType = [
+  {
+    id: string,
+    dayWarning: number
+  }
+]
 type ActionProps = {
   type: string;
   message: string;
   typeContractData: TypeContractType;
+  warningData: warningDataType;
+  cycleData: CycleControlType;
 };
 
 const initState = {
-  roleData: [],
+  typeContractData: [],
+  warningData: [],
+  cycleData: []
 };
 
 const typeContractReducer = (state = initState, action: ActionProps) => {
@@ -29,6 +39,8 @@ const typeContractReducer = (state = initState, action: ActionProps) => {
         requesting: false,
         success: true,
         typeContractData: action.typeContractData,
+        warningData: action.warningData,
+        cycleData: action.cycleData
       };
     case FETCH_TYPE_CONTRACT_ERROR:
       return {

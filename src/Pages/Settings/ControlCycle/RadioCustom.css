@@ -1,4 +1,4 @@
-.radio-control-cycle-wrapper
+.update-user-manage-radio
   :where(.css-dev-only-do-not-override-1ij74fp).ant-radio-wrapper
   .ant-radio-inner {
   width: 24px;
@@ -7,15 +7,14 @@
   background-color: transparent;
 }
 
-
-.radio-control-cycle-wrapper
+.update-user-manage-radio
   :where(.css-dev-only-do-not-override-1ij74fp).ant-radio-wrapper
   .ant-radio-inner::after {
   background-color: #0b80ec;
-  zoom: 2.25;
+  zoom: 2.5;
 }
 
-.radio-control-cycle-wrapper
+.update-user-manage-radio
   :where(.css-dev-only-do-not-override-1ij74fp).ant-radio-wrapper
   .ant-radio-checked
   .ant-radio-inner {
@@ -26,25 +25,17 @@
   .ant-radio-inner::after {
   background: white;
 }
-.radio-control-cycle-wrapper
+.update-user-manage-radio
   :where(.css-dev-only-do-not-override-1ij74fp).ant-radio-wrapper {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.002em;
-    color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.002em;
+  color: #ffffff;
 }
 
-.radio-control-cycle-wrapper
+.update-user-manage-radio
   :where(.css-dev-only-do-not-override-1ij74fp).ant-radio-wrapper {
   margin-right: 70px;
-}
-
-.ant-radio-wrapper {
-  margin-bottom: 20px;
-}
-
-:where(.css-dev-only-do-not-override-1ij74fp).ant-radio-wrapper span.ant-radio+* {
-  padding-top: -8px;
 }

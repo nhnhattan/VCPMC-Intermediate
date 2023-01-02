@@ -2,6 +2,9 @@ import {
   FETCH_TYPE_CONTRACT_REQUEST,
   FETCH_TYPE_CONTRACT_ERROR,
   FETCH_TYPE_CONTRACT_SUCCESS,
+  FETCH_WARNINGWORK_ERROR,
+  FETCH_WARNINGWORK_REQUEST,
+  FETCH_WARNINGWORK_SUCCESS
 } from "../constants/typeContractConstans";
 
 import {
@@ -30,13 +33,29 @@ const loadTypeContracts = async (dispatch: Dispatch) => {
     const typeContractDoc = collection(db, "typecontracts");
     const q = query(typeContractDoc, orderBy("key", "asc"));
     const dbGetDocs = await getDocs(q);
-    const dataRoles = await dbGetDocs.docs.map((doc: any) => ({
+    const dataTypeContracts = await dbGetDocs.docs.map((doc: any) => ({
       ...doc.data(),
       id: doc.id,
     }));
+    const warningWorkDoc = collection(db, "warningwork");
+    const dbGetDocsWarn = await getDocs(warningWorkDoc);
+    const dataWarning = await dbGetDocsWarn.docs.map((doc: any) => ({
+      ...doc.data(),
+      id: doc.id,
+    }));
+
+    const cycleDoc = collection(db, "CycleControl");
+    const dbGetDocsCycles = await getDocs(cycleDoc);
+    const dataCycles = await dbGetDocsCycles.docs.map((doc: any) => ({
+      ...doc.data(),
+      id: doc.id,
+    }));
+    
     dispatch({
       type: FETCH_TYPE_CONTRACT_SUCCESS,
-      typeContractData: dataRoles,
+      typeContractData: dataTypeContracts,
+      warningData: dataWarning,
+      cycleData: dataCycles
     });
   } catch (error) {
     console.log(error);
@@ -46,5 +65,8 @@ const loadTypeContracts = async (dispatch: Dispatch) => {
     });
   }
 };
+
+
+
 
 export { loadTypeContracts };

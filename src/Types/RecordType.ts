@@ -3,7 +3,7 @@ export type RecordType = {
   RecordName: string;
   ISRCId: string;
   Singer: string;
-  Composer: String;
+  Composer: string;
   Producer: string;
   Genre: string;
   Format: string;

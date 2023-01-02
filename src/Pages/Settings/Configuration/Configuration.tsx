@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowRight } from "../../../assets/svg/ArrowRight";
 import { CheckThemeIcon } from "../../../assets/svg/CheckThemeIcon";
 import { SliderLeftIcon } from "../../../assets/svg/SliderLeftIcon";
@@ -61,11 +61,23 @@ const Configuration = () => {
   const themeUserLocal = Number(localStorage.getItem("ThemeId"));
   const languageUserLocal = localStorage.getItem("language");
 
-  const [themeUser, setThemeUse] = useState(themeUserLocal);
-
+  const [themeUser, setThemeUse] = useState(0);
+  const [language, setLanguage] = useState("vietnamese");
+  useEffect(() => {
+    if (themeUserLocal) {
+      setThemeUse(themeUserLocal);
+    } else {
+      setThemeUse(0);
+    }
+    if(!languageUserLocal) {
+      setLanguage("vietnamese")
+    } else {
+      setLanguage(languageUserLocal)
+    }
+  });
   return (
     <>
-      {!themeUserLocal ? (
+      {!themeUser ? (
         <Loading />
       ) : (
         <div className="config-wrapper">
@@ -152,7 +164,7 @@ const Configuration = () => {
                   },
                 ]}
                 style={{ width: 246 }}
-                defaultValue={languageUserLocal}
+                defaultValue={language}
                 onChange={onChangeSelect}
               />
             </div>

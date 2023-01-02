@@ -31,7 +31,11 @@ export const pathClosedMenu = [
   "/support/downloads",
   "/support/feedback",
   "/contract/updateTypeContract",
-  "/record/Manage-approve"
+  "/record/Manage-approve",
+  "/contract/updateWarningWork",
+  "/GenreManagement",
+  "/GenreManagement/UpdateGenre",
+  "/ControlCycle"
 ];
 
 const Sidebar = () => {
@@ -154,10 +158,21 @@ const Sidebar = () => {
                     </NavLink>
                   </div>
                   <div className="navbar-child-item">
-                    <p>Thông tin tác phẩm</p>
+                    <NavLink
+                      to={"/GenreManagement"}
+                      className="navbar-child-item-link"
+                    >
+                      <p>Thông tin tác phẩm</p>
+                    </NavLink>
                   </div>
                   <div className="navbar-child-item">
-                    <p>Chu kỳ đối soát</p>
+                  <NavLink
+                      to={"/ControlCycle"}
+                      className="navbar-child-item-link"
+                    >
+                      <p>Chu kỳ đối soát</p>
+                    </NavLink>
+                    
                   </div>
                 </div>
               </div>
